@@ -7,6 +7,7 @@
 
 import Foundation
 
+// API documentation https://developer.themoviedb.org/reference/intro/getting-started
 extension URLSession {
     func get<T: Decodable>(path: String, queryItems: [String: String] = [:], defaultValue: T, completion: @escaping (T) -> Void) {
         
